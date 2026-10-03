@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>앱·보상 · 해남 ESG 탄소 감축 시범사업</title>
+  <meta name="description" content="앱으로 실천을 인증하고 Algorand 기반 디지털 자산으로 보상받는 흐름을 체험해 볼 수 있습니다.">
+  <meta name="theme-color" content="#0f3d33">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f3d33'/%3E%3Cpath d='M9 22c0-8 5-13 14-13 0 9-5 14-13 14l-1-1z' fill='%23c8f169'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="app">
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">홈</a><span>/</span><span>앱·보상</span></p>
+        <h1>앱·보상</h1>
+        <p>참여자는 앱으로 실천을 인증하고, 확인된 실천은 Algorand 블록체인 기반 디지털 자산으로 보상받습니다.</p>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="demo">
+      <div class="container">
+        <header class="section-head section-head-center reveal">
+          <p class="eyebrow">앱 체험</p>
+          <h2>직접 눌러 보세요</h2>
+          <p>앱이 어떻게 작동할지 보여 주는 체험용 화면입니다. 실제 인증이나 보상 지급은 이루어지지 않습니다.</p>
+        </header>
+        <div class="demo reveal">
+          <div class="phone">
+            <div class="phone-screen">
+              <div class="phone-head"><b>오늘의 실천</b><span>체험용</span></div>
+              <div class="phone-body" id="demo-body" aria-live="polite"></div>
+            </div>
+          </div>
+          <div class="demo-side">
+            <h3>실천에서 보상까지</h3>
+            <ol class="demo-steps" id="demo-steps">
+              <li><span>1</span><div><b>활동 선택</b><small>오늘 실천한 활동을 앱에서 고릅니다.</small></div></li>
+              <li><span>2</span><div><b>인증 자료 제출</b><small>영수증이나 사진을 올립니다.</small></div></li>
+              <li><span>3</span><div><b>확인</b><small>제출한 자료로 실천 여부를 확인합니다.</small></div></li>
+              <li><span>4</span><div><b>보상 지급</b><small>Algorand 기반 디지털 자산이 지급됩니다.</small></div></li>
+            </ol>
+            <p class="note">실제 앱의 화면 구성, 인정 활동, 보상 수량은 아직 정해지지 않았습니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="activities">
+      <div class="container">
+        <header class="section-head section-head-center reveal">
+          <p class="eyebrow">활동 예시</p>
+          <h2>이런 실천을 떠올려 볼 수 있습니다</h2>
+          <p>일상 속 탄소 감축 실천의 일반적인 예시입니다. 시범사업에서 실제로 인정할 활동과 기준은 확정 후 안내합니다.</p>
+        </header>
+        <div class="chips reveal" data-filter="#activity-list">
+          <button class="chip" type="button" data-cat="all" aria-pressed="true">전체</button>
+          <button class="chip" type="button" data-cat="move" aria-pressed="false">이동</button>
+          <button class="chip" type="button" data-cat="buy" aria-pressed="false">소비</button>
+          <button class="chip" type="button" data-cat="cycle" aria-pressed="false">자원순환</button>
+          <button class="chip" type="button" data-cat="energy" aria-pressed="false">에너지</button>
+        </div>
+        <div class="card-grid cols-3" id="activity-list">
+          <article class="activity" data-cat="move">
+            <span class="activity-icon tone-a">🚌</span>
+            <div><em>이동</em><h3>대중교통 이용</h3><p>승용차 대신 버스로 이동하기</p></div>
+          </article>
+          <article class="activity" data-cat="move">
+            <span class="activity-icon tone-a">🚲</span>
+            <div><em>이동</em><h3>자전거·도보 이동</h3><p>가까운 거리는 걷거나 자전거 타기</p></div>
+          </article>
+          <article class="activity" data-cat="buy">
+            <span class="activity-icon tone-b">🥬</span>
+            <div><em>소비</em><h3>지역 농산물 구매</h3><p>가까운 곳에서 기른 농산물 고르기</p></div>
+          </article>
+          <article class="activity" data-cat="buy">
+            <span class="activity-icon tone-b">🧾</span>
+            <div><em>소비</em><h3>전자영수증 받기</h3><p>종이 영수증 대신 전자영수증 선택하기</p></div>
+          </article>
+          <article class="activity" data-cat="cycle">
+            <span class="activity-icon tone-c">♻️</span>
+            <div><em>자원순환</em><h3>재활용 분리배출</h3><p>품목별로 올바르게 분리해 배출하기</p></div>
+          </article>
+          <article class="activity" data-cat="cycle">
+            <span class="activity-icon tone-c">🥤</span>
+            <div><em>자원순환</em><h3>다회용기 사용</h3><p>텀블러와 장바구니 챙기기</p></div>
+          </article>
+          <article class="activity" data-cat="energy">
+            <span class="activity-icon tone-d">🔌</span>
+            <div><em>에너지</em><h3>전기 절약</h3><p>쓰지 않는 전기 줄이기</p></div>
+          </article>
+          <article class="activity" data-cat="energy">
+            <span class="activity-icon tone-d">🌡️</span>
+            <div><em>에너지</em><h3>적정 냉난방</h3><p>실내 온도를 알맞게 유지하기</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="algorand">
+      <div class="container">
+        <header class="section-head section-head-center reveal">
+          <p class="eyebrow">보상 수단</p>
+          <h2>왜 Algorand인가요?</h2>
+          <p>Algorand는 지분증명 방식의 공개 블록체인입니다. 탄소 감축을 보상하는 사업의 취지에 맞는 특성을 갖고 있습니다.</p>
+        </header>
+        <div class="card-grid cols-4">
+          <article class="card reveal">
+            <span class="card-icon tone-a">🌿</span>
+            <h3>낮은 에너지 사용</h3>
+            <p>채굴 경쟁이 없는 순수 지분증명(PPoS) 합의 방식으로, 한 번의 블록 생성으로 거래를 확정합니다.</p>
+            <a class="source" href="https://algorand.co/technology/sustainability" target="_blank" rel="noopener">출처: Algorand</a>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon tone-c">⚡</span>
+            <h3>빠른 확정</h3>
+            <p>거래가 수 초 안에 확정되며, 확정된 거래는 되돌려지지 않습니다.</p>
+            <a class="source" href="https://algorand.co/technology/pure-proof-of-stake" target="_blank" rel="noopener">출처: Algorand</a>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon tone-b">🪙</span>
+            <h3>낮은 수수료</h3>
+            <p>거래 수수료가 약 0.001 ALGO 수준이어서, 소액 보상을 자주 지급하는 구조에 적합합니다.</p>
+            <a class="source" href="https://dev.algorand.co/getting-started/why-algorand" target="_blank" rel="noopener">출처: Algorand 개발자 문서</a>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon tone-d">🔎</span>
+            <h3>공개된 기록</h3>
+            <p>지급 내역이 공개 블록체인에 남아, 누구나 탐색기에서 확인할 수 있습니다.</p>
+            <a class="source" href="cases.html" >관련 사례 보기</a>
+          </article>
+        </div>
+        <p class="note reveal">
+          보상으로 지급할 디지털 자산의 종류, 수량, 지급 기준, 사용처는 아직 정해지지 않았습니다.
+          가상자산 관련 법·제도에 대한 검토를 거쳐 확정한 뒤 공개합니다. 이 페이지는 투자 권유가 아닙니다.
+        </p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-inner reveal">
+        <h2>비슷한 시도는 어떤 결과를 냈을까요?</h2>
+        <p>국내외 사례 8건을 조사해 정리했습니다.</p>
+        <div class="cta-actions">
+          <a class="btn btn-accent" href="cases.html">모범 사례 보기</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

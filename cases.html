@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>모범 사례 · 해남 ESG 탄소 감축 시범사업</title>
+  <meta name="description" content="탄소 감축 실천을 보상하는 국내외 사례 8건을 조사해 정리했습니다. 정부·지자체 제도, 블록체인·토큰 보상, Algorand 기반 사례.">
+  <meta name="theme-color" content="#0f3d33">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f3d33'/%3E%3Cpath d='M9 22c0-8 5-13 14-13 0 9-5 14-13 14l-1-1z' fill='%23c8f169'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="cases">
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">홈</a><span>/</span><span>모범 사례</span></p>
+        <h1>모범 사례</h1>
+        <p>탄소 감축 실천을 보상하는 시도는 이미 여러 곳에서 이루어지고 있습니다. 국내외 사례 8건을 조사해, 확인된 사실과 본 사업에 주는 시사점을 정리했습니다.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <header class="section-head section-head-center reveal">
+          <p class="eyebrow">사례 모음</p>
+          <h2>유형별로 살펴보기</h2>
+          <p>카드를 누르면 확인된 사실과 출처를 볼 수 있습니다.</p>
+        </header>
+        <div class="chips reveal" data-filter="#case-grid">
+          <button class="chip" type="button" data-cat="all" aria-pressed="true">전체</button>
+          <button class="chip" type="button" data-cat="public" aria-pressed="false">정부·지자체</button>
+          <button class="chip" type="button" data-cat="token" aria-pressed="false">블록체인·토큰</button>
+          <button class="chip" type="button" data-cat="algorand" aria-pressed="false">Algorand 기반</button>
+        </div>
+        <div class="card-grid cols-3" id="case-grid"></div>
+        <dialog class="modal" id="case-modal"></dialog>
+      </div>
+    </section>
+
+    <section class="section section-tint">
+      <div class="container">
+        <header class="section-head section-head-center reveal">
+          <p class="eyebrow">한눈에 비교</p>
+          <h2>보상 수단으로 본 차이</h2>
+        </header>
+        <div class="table-wrap reveal">
+          <table class="compare">
+            <thead>
+              <tr><th scope="col">사례</th><th scope="col">운영</th><th scope="col">참여 방식</th><th scope="col">보상 수단</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">탄소중립포인트</th><td>정부</td><td>전용 앱·누리집</td><td>포인트 (연 상한 7만 원)</td></tr>
+              <tr><th scope="row">탄소모아 탄탄e</th><td>전라남도</td><td>플랫폼 인증</td><td>지역화폐 (연 최대 20만 원)</td></tr>
+              <tr><th scope="row">기후행동 기회소득</th><td>경기도</td><td>전용 앱 인증</td><td>지역화폐 (연 최대 6만 원)</td></tr>
+              <tr><th scope="row">HOOXI 앱</th><td>W재단</td><td>앱 미션</td><td>블록체인 토큰 (WGP)</td></tr>
+              <tr><th scope="row">PAM-TALK</th><td>국내 선행 구현</td><td>플랫폼 인증</td><td>Algorand 메인넷 자산</td></tr>
+              <tr class="is-ours"><th scope="row">본 시범사업 (계획)</th><td>대표자 신승중</td><td>앱 인증</td><td>Algorand 기반 디지털 자산 (세부 미정)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">시사점</p>
+          <h2>사례에서 얻은 네 가지</h2>
+          <p>조사한 사례를 바탕으로 본 시범사업이 설계 단계에서 살펴야 할 점을 정리했습니다.</p>
+        </header>
+        <div class="card-grid cols-2">
+          <div class="lesson reveal">
+            <span class="lesson-num">1</span>
+            <h3>실천 보상은 검증된 참여 방식입니다</h3>
+            <p>정부와 경기도의 제도에는 각각 200만 명 이상이 참여했습니다. 일상 실천에 보상을 연결하는 방식 자체는 이미 효과가 확인되었습니다.</p>
+          </div>
+          <div class="lesson reveal">
+            <span class="lesson-num">2</span>
+            <h3>보상 재원의 지속성이 과제입니다</h3>
+            <p>참여가 늘수록 재원 부담이 커집니다. 경기도 사례에서는 보상 지급 중단이 보도되었습니다. 예산에만 기대지 않는 구조가 필요합니다.</p>
+          </div>
+          <div class="lesson reveal">
+            <span class="lesson-num">3</span>
+            <h3>토큰은 사용처가 함께 있어야 합니다</h3>
+            <p>암호화폐로 보상한 선례는 앱 안의 쇼핑몰 등 사용처를 함께 마련했습니다. 받은 보상을 지역에서 쓸 수 있는 길을 설계해야 합니다.</p>
+          </div>
+          <div class="lesson reveal">
+            <span class="lesson-num">4</span>
+            <h3>기존 제도와의 차별화가 필요합니다</h3>
+            <p>전남에는 이미 지역화폐로 보상하는 탄소모아 탄탄e가 있습니다. 본 사업은 블록체인 기록과 ESG 생태계라는 고유한 역할을 분명히 해야 합니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-inner reveal">
+        <h2>본 사업의 구조가 궁금하다면</h2>
+        <p>사업 목적과 참여자 구성, 진행 상태를 확인해 보세요.</p>
+        <div class="cta-actions">
+          <a class="btn btn-accent" href="about.html">사업 소개 보기</a>
+          <a class="btn btn-light" href="app.html#demo">앱 체험하기</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
