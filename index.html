@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>온잎 · 일상의 탄소 감축을 기록하고 보상받는 커뮤니티</title>
+  <meta name="description" content="온잎은 대중교통, 로컬푸드, 재활용 같은 일상 속 탄소 감축 활동을 기록하고 포인트로 보상받는 지역 커뮤니티 플랫폼입니다.">
+  <meta name="theme-color" content="#0f3d33">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f3d33'/%3E%3Cpath d='M9 22c0-8 5-13 14-13 0 9-5 14-13 14l-1-1z' fill='%23c8f169'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="온잎 홈">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="9" fill="currentColor"/>
+          <path d="M9 22c0-8 5-13 14-13 0 9-5 14-13 14l-1-1z" fill="#c8f169"/>
+          <path d="M10 22c3-4 6-7 10-9" stroke="#0f3d33" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+        </svg>
+        <span class="brand-name">온잎</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
+        <a href="#how">참여 방법</a>
+        <a href="#activities">활동</a>
+        <a href="#calculator">감축량 계산</a>
+        <a href="#features">특징</a>
+        <a href="#faq">자주 묻는 질문</a>
+        <a class="btn btn-primary btn-small" href="#join">사전 신청</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 히어로 -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">지역 기반 탄소 감축 커뮤니티</p>
+          <h1>오늘의 작은 실천을<br><em>눈에 보이는 변화</em>로</h1>
+          <p class="hero-lead">
+            버스를 타고, 동네 농산물을 사고, 분리배출을 한 하루.
+            온잎은 그 실천을 기록하고 감축량으로 바꿔, 지역에서 쓸 수 있는 포인트로 돌려드립니다.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#join">사전 신청하기</a>
+            <a class="btn btn-ghost" href="#how">어떻게 참여하나요?</a>
+          </div>
+          <ul class="hero-points">
+            <li>가입비 없음</li>
+            <li>사진 한 장으로 인증</li>
+            <li>동네 가맹점에서 사용</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="phone">
+            <div class="phone-top">
+              <span class="phone-title">이번 주 나의 실천</span>
+              <span class="phone-badge">예시 화면</span>
+            </div>
+            <div class="ring">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="50" class="ring-track"/>
+                <circle cx="60" cy="60" r="50" class="ring-value"/>
+              </svg>
+              <div class="ring-label">
+                <strong>4.2<small>kg</small></strong>
+                <span>CO₂ 감축</span>
+              </div>
+            </div>
+            <ul class="phone-list">
+              <li><span class="dot dot-a"></span>대중교통 이용<b>+20P</b></li>
+              <li><span class="dot dot-b"></span>로컬푸드 구매<b>+50P</b></li>
+              <li><span class="dot dot-c"></span>재활용 분리배출<b>+30P</b></li>
+            </ul>
+          </div>
+          <div class="float-card float-card-1">
+            <span class="float-icon">🚌</span>
+            <div><b>인증 완료</b><span>버스 이용 · 방금 전</span></div>
+          </div>
+          <div class="float-card float-card-2">
+            <span class="float-icon">🥬</span>
+            <div><b>쿠폰 도착</b><span>로컬푸드 매장 10% 할인</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 참여 방법 -->
+    <section class="section" id="how">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">참여 방법</p>
+          <h2>세 단계면 충분합니다</h2>
+          <p>복잡한 절차 없이, 평소 하던 일에 인증만 더하면 됩니다.</p>
+        </header>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num">01</span>
+            <h3>실천하기</h3>
+            <p>대중교통 이용, 로컬푸드 구매, 다회용기 사용처럼 일상에서 할 수 있는 활동을 고릅니다.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">02</span>
+            <h3>인증하기</h3>
+            <p>영수증이나 활동 사진을 올리면 검증 절차를 거쳐 감축량이 기록됩니다.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">03</span>
+            <h3>보상받기</h3>
+            <p>승인된 활동만큼 포인트가 쌓이고, 지역 가맹점 쿠폰이나 친환경 상품으로 바꿀 수 있습니다.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 활동 -->
+    <section class="section section-tint" id="activities">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">인증 가능한 활동</p>
+          <h2>이미 하고 있는 일이 실천이 됩니다</h2>
+          <p>포인트는 서비스 설계안 기준의 예시이며, 정식 운영 시 조정될 수 있습니다.</p>
+        </header>
+        <div class="activity-grid">
+          <article class="activity reveal">
+            <span class="activity-icon">🚌</span>
+            <h3>대중교통 이용</h3>
+            <p>승용차 대신 버스·지하철로 이동한 기록</p>
+            <span class="pill">+20P</span>
+          </article>
+          <article class="activity reveal">
+            <span class="activity-icon">🥬</span>
+            <h3>로컬푸드 구매</h3>
+            <p>우리 지역 농가가 기른 농산물 구매 영수증</p>
+            <span class="pill">+50P</span>
+          </article>
+          <article class="activity reveal">
+            <span class="activity-icon">♻️</span>
+            <h3>재활용 분리배출</h3>
+            <p>품목별로 올바르게 분리한 배출 사진</p>
+            <span class="pill">+30P</span>
+          </article>
+          <article class="activity reveal">
+            <span class="activity-icon">🥤</span>
+            <h3>다회용기 사용</h3>
+            <p>텀블러·장바구니·용기 지참 인증</p>
+            <span class="pill">+10P</span>
+          </article>
+          <article class="activity reveal">
+            <span class="activity-icon">🚲</span>
+            <h3>자전거·도보 이동</h3>
+            <p>가까운 거리를 걷거나 자전거로 이동</p>
+            <span class="pill">+20P</span>
+          </article>
+          <article class="activity reveal">
+            <span class="activity-icon">🔌</span>
+            <h3>에너지 절약</h3>
+            <p>전월 대비 전기 사용량을 줄인 고지서</p>
+            <span class="pill">+40P</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 계산기 -->
+    <section class="section" id="calculator">
+      <div class="container calc-wrap">
+        <div class="calc-copy reveal">
+          <p class="eyebrow">감축량 계산</p>
+          <h2>내 일주일은<br>얼마나 줄일 수 있을까요?</h2>
+          <p>
+            일주일 동안 실천할 횟수를 조절해 보세요.
+            한 달 기준 예상 감축량과 포인트를 바로 보여드립니다.
+          </p>
+          <p class="note">
+            ※ 활동별 감축량은 이해를 돕기 위한 <strong>예시 값</strong>입니다.
+            정식 서비스에서는 공인된 배출계수로 대체해야 합니다.
+          </p>
+        </div>
+
+        <div class="calc reveal" aria-label="감축량 계산기">
+          <div class="calc-rows" id="calc-rows"></div>
+          <div class="calc-result" aria-live="polite">
+            <div>
+              <span>한 달 예상 감축량</span>
+              <strong><span id="calc-co2">0</span><small>kg CO₂</small></strong>
+            </div>
+            <div>
+              <span>한 달 예상 포인트</span>
+              <strong><span id="calc-point">0</span><small>P</small></strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 특징 -->
+    <section class="section section-dark" id="features">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">온잎의 특징</p>
+          <h2>기록은 투명하게, 보상은 가까운 곳에서</h2>
+        </header>
+        <div class="feature-grid">
+          <article class="feature reveal">
+            <h3>검증된 기록</h3>
+            <p>인증 자료는 검증 절차를 거쳐 승인되며, 승인 이력은 변경할 수 없는 형태로 남깁니다.</p>
+          </article>
+          <article class="feature reveal">
+            <h3>지역에서 쓰는 보상</h3>
+            <p>모은 포인트는 동네 로컬푸드 매장과 친환경 가맹점의 쿠폰으로 교환합니다.</p>
+          </article>
+          <article class="feature reveal">
+            <h3>함께하는 챌린지</h3>
+            <p>이웃, 동료와 팀을 이뤄 주간 챌린지에 참여하고 감축량을 함께 쌓습니다.</p>
+          </article>
+          <article class="feature reveal">
+            <h3>한눈에 보는 리포트</h3>
+            <p>나와 우리 지역의 누적 감축량을 월별 리포트로 확인합니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 대상 -->
+    <section class="section" id="for">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">누구를 위한 서비스인가요</p>
+          <h2>참여하는 모두에게 이유가 있습니다</h2>
+        </header>
+        <div class="audience-grid">
+          <article class="audience reveal">
+            <h3>주민</h3>
+            <p>일상의 실천을 기록하고 생활비에 보탬이 되는 쿠폰으로 돌려받습니다.</p>
+          </article>
+          <article class="audience reveal">
+            <h3>농가·가맹점</h3>
+            <p>지역 소비자와 직접 만나고, 친환경 소비를 하는 단골을 얻습니다.</p>
+          </article>
+          <article class="audience reveal">
+            <h3>기업·기관</h3>
+            <p>임직원 참여 프로그램을 운영하고, 감축 실적을 ESG 보고 자료로 활용합니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-tint" id="faq">
+      <div class="container faq-wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">자주 묻는 질문</p>
+          <h2>궁금한 점을 모았습니다</h2>
+        </header>
+        <div class="faq reveal">
+          <details>
+            <summary>이용 요금이 있나요?</summary>
+            <p>개인 참여자는 무료입니다. 기업·기관용 프로그램은 별도로 안내할 예정입니다.</p>
+          </details>
+          <details>
+            <summary>활동은 어떻게 검증하나요?</summary>
+            <p>영수증이나 사진 같은 인증 자료를 올리면 검증 담당자가 확인한 뒤 승인합니다. 승인된 활동만 감축량과 포인트로 인정됩니다.</p>
+          </details>
+          <details>
+            <summary>포인트는 어디에서 쓸 수 있나요?</summary>
+            <p>지역 가맹점 쿠폰이나 친환경 상품으로 교환하는 방식으로 준비하고 있습니다. 사용처는 서비스 시작과 함께 공개합니다.</p>
+          </details>
+          <details>
+            <summary>지금 바로 이용할 수 있나요?</summary>
+            <p>현재는 출시 준비 단계입니다. 사전 신청을 남겨 주시면 시작할 때 가장 먼저 알려드립니다.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 사전 신청 -->
+    <section class="section cta" id="join">
+      <div class="container cta-inner reveal">
+        <h2>시작 소식을 가장 먼저 받아보세요</h2>
+        <p>이메일을 남겨 주시면 서비스가 열릴 때 안내해 드립니다.</p>
+        <form class="join-form" id="join-form" novalidate>
+          <label class="sr-only" for="join-email">이메일 주소</label>
+          <input id="join-email" name="email" type="email" placeholder="name@example.com" autocomplete="email" required>
+          <button class="btn btn-accent" type="submit">사전 신청</button>
+        </form>
+        <p class="form-message" id="form-message" role="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <span class="brand-name">온잎</span>
+        <p>일상의 탄소 감축을 기록하고 보상받는 지역 커뮤니티</p>
+      </div>
+      <nav aria-label="하단 메뉴">
+        <a href="#how">참여 방법</a>
+        <a href="#activities">활동</a>
+        <a href="#faq">자주 묻는 질문</a>
+        <a href="#join">사전 신청</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <small>© <span id="year"></span> 온잎. 본 페이지는 서비스 소개용 시안입니다.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
